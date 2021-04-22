@@ -1,0 +1,27 @@
+{
+  "name": "bj-sfld",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.6.5",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@vue/test-utils": "^1.1.0",
+    "babel-jest": "^26.5.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "jest": "^26.5.0",
+    "vue-jest": "^3.0.4"
+  }
+}

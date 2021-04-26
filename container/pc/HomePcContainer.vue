@@ -1,13 +1,11 @@
 <template>
   <div>
-    <header-pc />
     <section-one />
     <section-two />
     <!-- <dance-m class="dance-m" /> -->
     <!-- <dance-o class="dance-o" /> -->
     <!-- <dance-k class="dance-k" />
     <dance-a class="dance-a" /> -->
-    <footer-pc />
   </div>
 </template>
 
@@ -18,19 +16,15 @@ import DanceK from '@/components/pc/DanceK';
 import DanceA from '@/components/pc/DanceA';
 import SectionOne from '@/components/pc/home/SectionOne';
 import SectionTwo from '@/components/pc/home/SectionTwo';
-import HeaderPc from '@/components/pc/HeaderPc';
-import FooterPc from '@/components/pc/FooterPc';
 
 export default {
   components: {
-    HeaderPc,
     DanceM,
     DanceO,
     DanceK,
     DanceA,
     SectionOne,
     SectionTwo,
-    FooterPc,
   },
 };
 </script>

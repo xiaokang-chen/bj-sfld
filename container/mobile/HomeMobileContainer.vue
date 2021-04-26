@@ -1,15 +1,13 @@
 <template>
   <div>
-    <header-mobile />
+    123
   </div>
 </template>
 
 <script>
-import HeaderMobile from '@/components/mobile/HeaderMobile';
 
 export default {
   components: {
-    HeaderMobile,
   },
 };
 </script>

@@ -66,7 +66,7 @@ export default {
   width 1280px
   margin 0 auto
   padding-left 80px
-  padding-top 120px
+  padding-top 40px
 
 .left
   display flex

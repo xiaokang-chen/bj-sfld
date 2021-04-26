@@ -16,7 +16,10 @@ export default {
     css: [
         'ant-design-vue/dist/antd.css'
     ],
-
+    // 可以随处直接使用定义过的变量或函数
+    styleResources: {
+        stylus: ['./assets/color.styl'],
+    },
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
     plugins: [
         '@/plugins/antd-ui'

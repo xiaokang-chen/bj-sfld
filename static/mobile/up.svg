@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>miniicon/hamburger备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页-(移动端)" transform="translate(-313.000000, -84.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="360" height="640"></rect>
+            <g id="miniicon/hamburger备份" transform="translate(320.000000, 88.000000) rotate(-180.000000) translate(-320.000000, -88.000000) translate(304.000000, 72.000000)">
+                <g id="编组-2">
+                    <g id="编组-8">
+                        <rect id="Rectangle-Copy-26" x="0" y="0" width="32" height="32"></rect>
+                        <path d="M12.85325,22.85375 L12.14625,22.14675 C11.95125,21.95175 11.95125,21.63475 12.14625,21.43975 L17.58625,15.99975 L12.14625,10.56075 C11.95125,10.36575 11.95125,10.04875 12.14625,9.85375 L12.85325,9.14675 C13.04825,8.95175 13.36525,8.95175 13.56025,9.14675 L19.70725,15.29275 C20.09725,15.68375 20.09725,16.31675 19.70725,16.70675 L13.56025,22.85375 C13.36525,23.04875 13.04825,23.04875 12.85325,22.85375" id="Page-1-Copy" fill="#787E91" transform="translate(15.999940, 16.000000) rotate(-270.000000) translate(-15.999940, -16.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

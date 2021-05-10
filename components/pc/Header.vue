@@ -117,7 +117,7 @@ export default {
   font-size 16px
   font-weight 500
   line-height 80px
-  color #494d5a
+  color color-grey-5
 
 .sub_nav
   position absolute
@@ -185,7 +185,7 @@ export default {
       background url('/common/phone_white.svg') center center no-repeat
   &:before
     transition 0.3s
-    background #3784FF
+    background color-blue-1
     z-index -1
   &:hover:after, &:hover:before
     width 100%
@@ -195,7 +195,7 @@ export default {
   line-height 40px
   font-size 16px
   font-weight 400
-  color #3784FF
+  color color-blue-1
   background-color transparent
 
 .left_icon

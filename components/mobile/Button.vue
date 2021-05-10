@@ -73,7 +73,7 @@ export default {
 }
 
 .button-blue {
-  background: color-blue-1;
+  background: #3784FF;
 
   &:hover {
     background: color-blue-2;

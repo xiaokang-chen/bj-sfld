@@ -46,6 +46,11 @@ export default {
   padding-top 80px
   overflow hidden
 
+@media screen and (max-width: 768px)
+  .main_content
+    padding-top 56px
+    overflow hidden
+
 html {
   font-family:
     'Source Sans Pro',

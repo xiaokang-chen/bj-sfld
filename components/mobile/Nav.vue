@@ -1,5 +1,5 @@
 <template>
-  <li class="nav-item">
+  <div class="nav-item">
     <a v-if="nav.route" :href="nav.route" class="nav" :class="nav.className" :target="nav.target">
       <div class="title">{{ nav.title }}</div>
     </a>
@@ -20,7 +20,7 @@
       :sub-navs="nav.children"
       :sub-nav-title="nav.title"
     />
-  </li>
+  </div>
 </template>
 
 <script>

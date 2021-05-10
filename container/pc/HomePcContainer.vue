@@ -2,6 +2,7 @@
   <div>
     <section-one />
     <section-two />
+    <section-three />
     <!-- <dance-m class="dance-m" /> -->
     <!-- <dance-o class="dance-o" /> -->
     <!-- <dance-k class="dance-k" />
@@ -16,6 +17,7 @@ import DanceK from '@/components/pc/DanceK';
 import DanceA from '@/components/pc/DanceA';
 import SectionOne from '@/components/pc/home/SectionOne';
 import SectionTwo from '@/components/pc/home/SectionTwo';
+import SectionThree from '@/components/pc/home/SectionThree';
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     DanceA,
     SectionOne,
     SectionTwo,
+    SectionThree,
   },
 };
 </script>

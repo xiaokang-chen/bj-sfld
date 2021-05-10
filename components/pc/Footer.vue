@@ -90,7 +90,7 @@ export default {
   justify-content space-between
   padding 30px 0
   margin 0 40px
-  color #bcbfc8
+  color color-grey-9
 
 .bottom_left
   display flex

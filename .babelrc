@@ -10,14 +10,10 @@
             }
           }
         ]
-      ]
+      ],
+      // "plugins":[
+      //   ["@babel/plugin-proposal-private-methods", { "loose": true }]
+      // ]
     }
   }
 }
-
-// {
-//   "presets": ["@babel/env"],
-//   "plugins": [
-//     "@babel/plugin-transform-runtime"
-//   ]
-// }

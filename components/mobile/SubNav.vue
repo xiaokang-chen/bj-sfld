@@ -6,7 +6,6 @@
       :class="{
         kind: !subNav.route,
         'sub-nav-item': !!subNav.route,
-        solveSchemeOffset: subNavTitle === '解决方案',
       }"
     >
       <div v-if="!subNav.route">
@@ -88,7 +87,4 @@ export default {
     color color-blue-1
     >a
       color color-blue-1
-
-.solveSchemeOffset:last-child
-  margin-left 130px
 </style>

@@ -13,19 +13,7 @@
       </div>
     </div>
     <div class="right">
-      <video
-        v-show="true"
-        muted
-        autoplay="autoplay"
-        loop="loop"
-        :poster="banner.systemPosition"
-        class="right_video"
-      >
-        <source :src="banner.system1Position" type="video/webm" />
-        <source :src="banner.system2Position" type="video/mp4" />
-        <source :src="banner.system3Position" type="video/mp4" />
-        您的浏览器不支持 video 标签。
-      </video>
+      <img :src="banner.systemPosition" class="right_video" />
       <div class="breathe_container">
         <div class="breathe_animation"></div>
         <div
@@ -50,10 +38,7 @@ export default {
       banner: {
         title: '圣福利达,更环保节能的制冷',
         titleIntroduce: '让技术更人性化，让产品更智能化，客户更爱用的制冷产品',
-        systemPosition: '/home/system.png',
-        system1Position: '/home/system1.webm',
-        system2Position: '/home/system2.mov',
-        system3Position: '/home/system3.mp4',
+        systemPosition: '/home/system.jpeg',
       },
     }
   }
@@ -120,8 +105,8 @@ export default {
   justify-content center
   align-items center
   position absolute
-  left 235px
-  top 80px
+  left 215px
+  top 120px
   width 125px
   height 125px
 

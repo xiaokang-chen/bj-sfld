@@ -1,0 +1,7 @@
+[{
+    "name": "sfld",
+    "script": "./index.js",
+    "error_file": "/bj-sfld/logs/sfld.log",
+    "out_file": "/bj-sfld/logs/sfld.log",
+    "merge_logs": true
+}]

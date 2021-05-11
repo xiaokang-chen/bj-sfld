@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <!-- <div class="company">北京圣福利达玻璃钢制品有限公司</div>
-    <div class="phone">电话：1390-123-9056</div> -->
     <swiper class="swiper-container banner" :options="swiperOption" :auto-play="true">
       <swiper-slide 
         v-for="(item, index) in banners" 
@@ -27,9 +25,9 @@ export default {
   data() {
     return {
       banners: [
-        {url: '/mobile/carousel_1.jpg', content: '规模化HVAC系统'},
-        {url: '/mobile/carousel_2.gif', content: '先进的水管理系统'}, 
-        {url: '/mobile/carousel_3.gif', content: '数字智能IOT设备'}
+        {url: '/mobile/lunbo_3.jpeg', content: '圆形逆流式冷却塔'},
+        {url: '/mobile/lunbo_1.jpeg', content: '冷却塔集群'},
+        {url: '/mobile/lunbo_2.jpeg', content: '方形水箱'}
       ],
       swiperOption: {
         autoplay: {
@@ -53,13 +51,7 @@ export default {
 <style lang="stylus" scoped>
 .container
   height 360px
-// .company
-//   text-align center
-//   font-size 22px
-//   font-weight 600
 
-// .phone
-//   font-size 20px
 .banner
   height 100%
 
@@ -78,7 +70,7 @@ export default {
   width 100%
   top 0
   left 0
-  background-color rgba(0,0,0,0.5)
+  background-color rgba(0,0,0,0.3)
   z-index 2 
 
 .background_content

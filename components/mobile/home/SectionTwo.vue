@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="product">主要产品&服务</div>
+    <div class="product">主要产品</div>
     <div v-for="item in product" :key="item.name" class="product_wrapper">
       <img :src="item.imgUrl" class="product_img" />
       <span class="product_title">{{item.name}}</span>
@@ -14,10 +14,10 @@ export default {
   data() {
     return {
       product: [
-        {name: '冷却塔', imgUrl: '/mobile/lqt.png', introduce: '冷却塔是一种独特的热交换器，它可使水和空气相互影响，从而降低水温'},
-        {name: '水箱', imgUrl: '/mobile/shx.png', introduce: '水箱是一种用于水存储的创新设计，应用场景包括住宅和商用的饮用水，自由压制，制造型工厂等'},
-        {name: '冷却塔维修服务', imgUrl: '/mobile/lqt_rep.gif', introduce: '根据您冷却塔的破损程度，进行塔皮更换、组件维修或者零件更换'},
-        {name: '水箱维修服务', imgUrl: '/mobile/shx_rep.gif', introduce: '储水设备在工业设备中至关重要。当您的水箱出现损坏时，该服务可利用数字化技术进行修复'},
+        {name: '冷却塔', imgUrl: '/mobile/lqt.png', introduce: '冷却塔是一种独特的热交换器，它可使水和空气相互影响，从而降低水温。'},
+        {name: '水箱', imgUrl: '/mobile/shx.png', introduce: '水箱是一种用于水存储的创新设计，常用于住宅和商用的饮用水以及工业用水的存储。'},
+        {name: '玻璃钢制品', imgUrl: '/mobile/blg.jpeg', introduce: '玻璃钢材料具有质轻、高强、防腐、保温、绝缘、隔音等诸多优点，可用于垃圾桶、餐桌、座椅等。'},
+        {name: '化粪池', imgUrl: '/mobile/hfch.jpeg', introduce: '化粪池是处理粪便并加以过滤沉淀的设备，主要用来保障生活社区的环境卫生。'},
       ]
     }
   }

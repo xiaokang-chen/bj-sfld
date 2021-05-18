@@ -5,16 +5,19 @@ export default {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' }
+            { hid: 'description', name: 'description', content: '北京圣福利达玻璃钢制品有限公司，主要生产冷却塔、水箱，玻璃钢制品等' }
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.jpg' }
-        ]
+        ],
+        // script: [
+        //     { src: '/global.js' }
+        // ]
     },
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
     css: [
-        'ant-design-vue/dist/antd.css'
+        './assets/antd.css'
     ],
     // 可以随处直接使用定义过的变量或函数
     styleResources: {

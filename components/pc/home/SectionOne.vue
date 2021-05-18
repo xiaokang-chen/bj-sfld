@@ -38,7 +38,7 @@ export default {
       banner: {
         title: '圣福利达,更环保节能的制冷',
         titleIntroduce: '让技术更人性化，让产品更智能化，客户更爱用的制冷产品',
-        systemPosition: '/home/system.jpeg',
+        systemPosition: '/home/system.jpg',
       },
     }
   }

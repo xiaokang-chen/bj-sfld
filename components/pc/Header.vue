@@ -2,7 +2,7 @@
   <header class="header_container">
     <div class="header_content">
       <a href="/">
-        <img class="logo" src="@/static/logo.jpg" />
+        <img class="logo" src="/logo.png" />
       </a>
       <nav class="header_nav">
         <div v-for="(nav, index) in navs" :key="index" class="nav_item">

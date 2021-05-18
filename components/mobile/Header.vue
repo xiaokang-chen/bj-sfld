@@ -6,7 +6,7 @@
           <img src="/mobile/nav.svg" alt="顶部导航" @click="showNavList()" />
         </div>
         <div class="logo">
-          <a href="/" target="_self"><img src="/logo.jpg" alt="圣福利达" /></a>
+          <a href="/" target="_self"><img src="/logo.png" alt="圣福利达" /></a>
         </div>
         <div>
           <sfld-button href="tel:13901239056" target="_blank">
@@ -69,7 +69,7 @@ export default {
           title: '资质荣誉', route: '/'
         },
         {
-          title: '关于我们', route: '/'
+          title: '关于我们', route: '/about'
         },
       ],
     };

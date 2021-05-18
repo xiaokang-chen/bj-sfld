@@ -7,11 +7,11 @@
         class="swiper-item item" 
         :style="{backgroundImage: `url('${item.url}')`}"
       >
-      <div class="background_overlay"></div>
-      <div class="background_content">{{item.content}}</div>
+      <div v-if="item.content" class="background_overlay">{{item.content}}</div>
       </swiper-slide>
       <div class="swiper-pagination"></div>
     </swiper>
+    <div class="phone">咨询热线:13901239056</div>
   </div>
 </template>
 <script>
@@ -25,13 +25,13 @@ export default {
   data() {
     return {
       banners: [
-        {url: '/mobile/lunbo_3.jpeg', content: '圆形逆流式冷却塔'},
-        {url: '/mobile/lunbo_1.jpeg', content: '冷却塔集群'},
-        {url: '/mobile/lunbo_2.jpeg', content: '方形水箱'}
+        {url: '/mobile/lunbo-1.jpg', content1: '圆形逆流式冷却塔'},
+        {url: '/mobile/lunbo-2.jpg', content1: '冷却塔集群'},
+        {url: '/mobile/lunbo-3.jpg', content1: '不锈钢水箱'}
       ],
       swiperOption: {
         autoplay: {
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false
         },
         // 显示分页
@@ -50,10 +50,12 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .container
+  position relative
   height 360px
 
 .banner
   height 100%
+  position relative
 
 .item
   position relative
@@ -62,22 +64,31 @@ export default {
   align-items center
   background-position center center
   background-repeat no-repeat
-  background-size auto 100%
+  background-size 100% 100%
 
-.background_overlay
+.phone
   position absolute
-  height 100%
-  width 100%
-  top 0
-  left 0
-  background-color rgba(0,0,0,0.3)
-  z-index 2 
-
-.background_content
-  font-size 24px
+  top 10px
+  left 10px
   color white
-  font-weight bold
-  z-index 3
+  font-size 20px
+  white-space nowrap
+  z-index 5
+
+
+// .background_overlay
+//   position absolute
+//   height 100%
+//   width 100%
+//   top 0
+//   left 0
+//   background-color rgba(0,0,0,0.3)
+//   font-size 24px
+//   color white
+//   font-weight bold
+//   text-align center
+//   line-height 360px
+//   z-index 2 
 
 .swiper-container /deep/ .swiper-pagination-bullets
   top 85%

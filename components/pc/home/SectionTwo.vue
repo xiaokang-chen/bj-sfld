@@ -38,9 +38,9 @@ export default {
   data() {
     const initCategoryIdx = 0;
     const category = [
-        {name: '冷却塔', product: ['lqt-1.jpeg', 'lqt-2.jpeg', 'cfct-3.jpg', 'cfct-4.jpg', 'cfct-5.jpg', 'cfct-6.jpg']},
-        {name: '玻璃钢制品', product: ['blg-1.jpg', 'blg-2.jpg']},
-        {name: '水箱', product: ['shx-1.jpg', 'shx-2.jpg', 'shx-3.jpg', 'shx-4.jpg']},
+        {name: '冷却塔', product: []},
+        {name: '水箱', product: []},
+        {name: '玻璃钢制品', product: []},
         {name: '化粪池', product: []},
         {name: '采光罩', product: []},
     ];
@@ -92,7 +92,6 @@ export default {
 
 .cards
   display flex
-  justify-content space-between
   flex-wrap wrap
   width 1280px
   height 420px
@@ -103,7 +102,8 @@ export default {
     display inline-block
     width 388px
     height 200px
-    margin-bottom 26px
+    margin-right 40px
+    margin-bottom 30px
     &:nth-child(3n)
       margin-right 0
   .image

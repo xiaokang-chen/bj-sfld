@@ -4,7 +4,10 @@
       <div v-for="item in data" :key="item.title" class="footer_item">
         <span class="title">{{item.title}}</span>
         <div class="item_wrapper">
-          <span v-for="(it, index) in item.content" :key="index" class="item">{{it}}</span>
+          <div v-for="(it, index) in item.content" :key="index" class="item">
+            <a v-if="it.name" :href="it.href" class="item_href">{{it.name}}</a>
+            <span v-else>{{it}}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +26,13 @@ export default {
   data() {
     return {
       data: [
-        {title: '公司产品', content: ['冷却塔', '玻璃钢制品', '水箱', '化粪池', '采光罩']},
+        {title: '公司产品', content: [
+          {name: '冷却塔', href: '/product/1'}, 
+          {name: '水箱', href: '/product/2'},
+          {name: '玻璃钢制品', href: '/product/3'},
+          {name: '化粪池', href: '/product/1'},
+          {name: '采光罩', href: '/product/1'},
+          ]},
         {title: '解决方案', content: ['餐饮', '医疗', '教育', '化工', '纺织']},
         {title: '关于我们', content: ['了解圣福利达', '联系我们']}
       ],
@@ -47,9 +56,8 @@ export default {
   margin 0 15px
   border-bottom 1px solid hsla(0,0%,100%,.12)
 
-// .footer_item
-  // display flex
-  // font-size 18px
+.item_href
+  color color-blue-3
 
 .title
   font-size 17px

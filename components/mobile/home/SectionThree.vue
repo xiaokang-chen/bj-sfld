@@ -4,8 +4,10 @@
     <div class="card">
       <span class="company_name">{{company}}</span>
       <ul class="detail">
-        <li>地址: 河北省廊坊市永清县后奕连接线</li>
-        <li>电话: 13901239056</li>
+        <!-- <li>地址: 河北省廊坊市永清县后奕连接线</li> -->
+        <li>联系人: 陈经理</li>
+        <li>座机: 010-67684960</li>
+        <li>手机: 13901239056</li>
         <li>邮箱: 17812122317@163.com</li>
       </ul>
     </div>

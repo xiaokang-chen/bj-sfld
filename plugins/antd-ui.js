@@ -1,4 +1,10 @@
 import Vue from 'vue'
-import Antd from 'ant-design-vue/lib'
+import {
+    Breadcrumb,
+    Input,
+    Button
+} from 'ant-design-vue/lib'
 
-Vue.use(Antd)
+Vue.use(Breadcrumb)
+Vue.use(Input)
+Vue.use(Button)

@@ -42,10 +42,6 @@ export default {
   }
 }
 
-.main_content
-  padding-top 80px
-  overflow hidden
-
 html {
   font-family:
     'Source Sans Pro',

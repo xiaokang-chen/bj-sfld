@@ -1,13 +1,13 @@
 <template>
   <div class="container">
-    <div>
-      <span class="product">{{productInfo[productId].product}}</span>
-      {{productInfo[productId].classIntro}}
-    </div>
     <a-breadcrumb class="breadcrumb">
       <a-breadcrumb-item><a href="/">首页</a></a-breadcrumb-item>
       <a-breadcrumb-item>{{productInfo[productId].product}}</a-breadcrumb-item>
     </a-breadcrumb>
+    <div class="product">{{productInfo[productId].product}}</div>
+    <div class="product_intro">
+      {{productInfo[productId].classIntro}}
+    </div>
     <div class="table">
       <div v-for="(item, index) in productInfo[productId].url" :key="index" class="table_item">
         <img :src="item" class="table_item_img" />
@@ -24,7 +24,7 @@ export default {
         {
           id: 1,
           product: '冷却塔',
-          classIntro: '系列包括圆形逆流式、方形逆流式、方形横流式、闭式冷却塔',
+          classIntro: '冷却塔系列包括圆形逆流式、方形逆流式、方形横流式、闭式冷却塔',
           url: [
             '/product/lqt_1.jpg',
             '/product/lqt_2.jpg',
@@ -37,7 +37,7 @@ export default {
         {
           id: 2, 
           product: '水箱',
-          classIntro: '的材质包括玻璃钢、不锈钢、搪瓷钢板、热镀锌',
+          classIntro: '水箱的材质包括玻璃钢、不锈钢、搪瓷钢板、热镀锌',
           url: [
             '/product/shx_1.jpg',
             '/product/shx_2.jpg',
@@ -50,7 +50,7 @@ export default {
         {
           id: 3, 
           product: '玻璃钢制品',
-          classIntro: '系列产品包括运输罐、酸洗槽、化粪池',
+          classIntro: '玻璃钢制品系列产品包括运输罐、酸洗槽、化粪池',
           url: [
             '/product/blg_1.jpg',
             '/product/blg_2.jpg',
@@ -74,11 +74,21 @@ export default {
   padding 15px
 
 .product
+  margin-top 10px
+  margin-bottom 15px
   font-size 22px
-  color red
+  font-weight bold
+  color color-grey-10
+  background color-grey-17
+
+.product_intro
+  font-size 16px
+  color color-grey-16
 
 .breadcrumb
-  margin-top 20px
+  margin-top -8px
+  font-size 14px
+  border-bottom 1px dashed color-grey-15
 
 .table
   display flex

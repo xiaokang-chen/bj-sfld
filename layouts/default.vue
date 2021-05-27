@@ -29,27 +29,28 @@ export default {
   display: none;
 }
 
+.main_content {
+  overflow hidden
+}
+
 // 因为需要全局对宽高进行判定，所以布局针对所有
 @media screen and (max-width: 768px) {
   .mobile {
-    display: block;
+    display block
+  }
+  .main_content {
+    padding-top 56px
   }
 }
 
 @media screen and (min-width: 769px) {
   .pc {
-    display: block;
+    display block
+  }
+  .main_content {
+    padding-top 80px
   }
 }
-
-.main_content
-  padding-top 80px
-  overflow hidden
-
-@media screen and (max-width: 768px)
-  .main_content
-    padding-top 56px
-    overflow hidden
 
 html {
   font-family:

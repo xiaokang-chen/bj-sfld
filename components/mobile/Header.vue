@@ -47,9 +47,9 @@ export default {
       navs: [
         { title: '公司产品', 
           children: [
-            { title: '冷却塔', route: '/' },
-            { title: '玻璃钢制品', route: '/' },
-            { title: '水箱', route: '/' },
+            { title: '冷却塔', route: '/product/1' },
+            { title: '水箱', route: '/product/2' },
+            { title: '玻璃钢制品', route: '/product/3' },
             { title: '化粪池', route: '/' },
             { title: '采光罩', route: '/' },
           ]
@@ -146,7 +146,7 @@ export default {
   margin 0 auto
 
 .logo
-  height 100%
+  height 56px
   a
     display block
     width 100%

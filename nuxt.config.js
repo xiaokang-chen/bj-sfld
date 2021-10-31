@@ -39,5 +39,18 @@ export default {
     modules: [],
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
-    build: {}
+    build: {
+        // 打包分析
+        // analyze: true,
+        // assetFilter: function(assetFilename) {
+        //     return assetFilename.endsWith('.js');
+        // },
+        // 打包优化
+        optimization: {
+            splitChunks: {
+                minSize: 10000,
+                maxSize: 250000
+            }
+        },
+    }
 }

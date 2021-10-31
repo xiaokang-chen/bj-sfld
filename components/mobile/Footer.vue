@@ -12,11 +12,11 @@
       </div>
     </div>
     <div class="footer_bottom">
-      <div>
+      <a href="https://beian.miit.gov.cn" target="_blank" class="beian">
         <span>{{mid1}}</span>
         <img src="/common/jingIcp.png" class="icp" />
         <span>{{mid2}}</span>
-      </div>
+      </a>
       <div>{{companyUrl}}</div>
     </div>
   </footer>
@@ -86,4 +86,7 @@ export default {
   width 16px
   height 16px
   vertical-align -3px
+
+ .beian
+  color: #bcbfc8;
 </style>

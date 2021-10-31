@@ -16,11 +16,11 @@
             <div class="right_line">|</div>
           </div>
         </div>
-        <div>
+        <a href="https://beian.miit.gov.cn" target="_blank" class="beian">
           <span>{{mid1}}</span>
           <img src="/common/jingIcp.png" class="icp" />
           <span>{{mid2}}</span>
-        </div>
+        </a>
         <span>{{right}}</span>
       </div>
     </div>
@@ -110,4 +110,7 @@ export default {
   width 16px
   height 16px
   vertical-align -3px
+
+ .beian
+  color: #bcbfc8;
 </style>

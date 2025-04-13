@@ -20,27 +20,36 @@ export default {
       pictureInPicture: false,
     };
   },
+  methods: {
+    handleEnterPictureInPicture() {
+      this.pictureInPicture = true;
+    },
+    handleLeavePictureInPicture() {
+      this.pictureInPicture = false;
+    },
+    handleClose() {
+      if (this.$refs.video) {
+        this.$refs.video.pause();
+        this.$refs.video.currentTime = 0;
+      }
+      this.$emit('close');
+    },
+  },
   mounted() {
     if (this.$refs.video) {
       this.$refs.video.play();
-      this.$refs.video.addEventListener('enterpictureinpicture', () => {
-        this.pictureInPicture = true;
-      });
-      this.$refs.video.addEventListener('leavepictureinpicture', () => {
-        this.pictureInPicture = false;
-      });
+      this.$refs.video.addEventListener('enterpictureinpicture', this.handleEnterPictureInPicture);
+      this.$refs.video.addEventListener('leavepictureinpicture', this.handleLeavePictureInPicture);
     }
   },
   beforeDestroy() {
     if (this.$refs.video) {
-      this.$refs.video.removeEventListener('enterpictureinpicture', () => {});
-      this.$refs.video.removeEventListener('leavepictureinpicture', () => {});
+      this.$refs.video.pause();
+      this.$refs.video.currentTime = 0;
+      this.$refs.video.removeEventListener('enterpictureinpicture', this.handleEnterPictureInPicture);
+      this.$refs.video.removeEventListener('leavepictureinpicture', this.handleLeavePictureInPicture);
+      this.$refs.video.src = '';
     }
-  },
-  methods: {
-    handleClose() {
-      this.$emit('close');
-    },
   },
 };
 </script>

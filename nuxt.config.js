@@ -17,7 +17,8 @@ export default {
 
     // Global CSS (https://go.nuxtjs.dev/config-css)
     css: [
-        './assets/antd.css'
+        './assets/antd.css',
+        './assets/global.styl'
     ],
     // 可以随处直接使用定义过的变量或函数
     styleResources: {

@@ -81,11 +81,11 @@ export default {
   data() {
     return {
       title: '客户成功案例',
-      // hoverIndex: null,
+      hoverIndex: null,
       cases: [
         {
-          title: "大型食品厂制冷系统改造",
-          background: "某河北食品企业原有制冷管道腐蚀严重，年维护成本超百万元。",
+          title: "唐山金牛药业制冷系统改造",
+          background: "唐山金牛药业原有制冷管道腐蚀严重，年维护成本超百万元。",
           solution: "采用定制化玻璃钢防腐管道系统，配套高效隔热层设计。",
           results: [
             "耐腐蚀性提升300%，预计使用寿命达15年",
@@ -94,8 +94,8 @@ export default {
           ]
         },
         {
-          title: "污水处理厂玻璃钢罐体集群项目",
-          challenge: "华北地区最大市政污水厂需建设10个耐酸碱储存罐（单罐容积500m³）。",
+          title: "河北隆兴餐饮玻璃钢罐体集群项目",
+          challenge: "河北隆兴餐饮需建设10个耐酸碱储存罐（单罐容积500m³）。",
           technologies: [
             "采用缠绕成型工艺，罐体轴向强度达280MPa",
             "内衬层添加石墨烯改性树脂，抗渗透性提升40%",
@@ -104,8 +104,8 @@ export default {
           feedback: "从材料检测到安装指导的全流程专业服务，确保了项目零缺陷验收。"
         },
         {
-          title: "化工厂特种管道应急工程",
-          emergency: "某化工厂突发管道泄漏，需72小时内完成200米耐HF酸管道更换。",
+          title: "淮安医疗器械管道应急工程",
+          emergency: "淮安医疗器械化工厂突发管道泄漏，需72小时内完成200米耐HF酸管道更换。",
           responseSteps: [
             "12小时出具材料方案（氟树脂改性玻璃钢）",
             "48小时完成生产并交付",
@@ -285,11 +285,5 @@ li {
 
 .el-icon-data-line {
   margin-right: 5px;
-}
-
-@media (max-width: 768px) {
-  .case-container {
-    grid-template-columns: 1fr;
-  }
 }
 </style>

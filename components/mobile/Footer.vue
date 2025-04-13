@@ -33,10 +33,10 @@ export default {
           {name: '化粪池', href: '/product/1'},
           {name: '采光罩', href: '/product/1'},
           ]},
-        {title: '解决方案', content: ['餐饮', '医疗', '教育', '化工', '纺织']},
+        {title: '行业客户', content: ['餐饮', '医疗', '教育', '化工', '纺织']},
         {title: '关于我们', content: ['了解圣福利达', '联系我们']}
       ],
-      mid1: '© 2019-2022 | ',
+      mid1: '© 2023-2025 | ',
       mid2: '京ICP备20005387号-1',
       companyUrl: '北京圣福利达玻璃钢制品有限公司：bj-sfld.com'
     }

@@ -55,7 +55,7 @@ export default {
           ]
         },
         {
-          title: '解决方案',
+          title: '行业客户',
           children: [
               { title: '餐饮', route: '/' },
               { title: '医疗', route: '/' },

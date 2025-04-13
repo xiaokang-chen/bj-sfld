@@ -33,14 +33,14 @@ export default {
     return {
       footerData: [
         {title: '公司产品', subtitle: ['冷却塔', '玻璃钢制品', '水箱', '化粪池', '采光罩']},
-        {title: '解决方案', subtitle: ['餐饮', '医疗', '教育', '化工', '纺织']},
+        {title: '行业客户', subtitle: ['餐饮', '医疗', '教育', '化工', '纺织']},
         {title: '客户案例', subtitle: ['唐山金牛药业', '河北隆兴餐饮', '淮安医疗器械']},
         {title: '资质荣誉', subtitle: ['营业执照']},
         {title: '联系我们', subtitle: ['电话', '邮箱']},
         {title: '友情链接', subtitle: ['百度', '奇虎360', '谷歌搜索']}
       ],
       left: ['关于圣福利达', '法律声明', '联系我们', '帮助中心'],
-      mid1: 'Copyright © 2019-2022 | ',
+      mid1: 'Copyright © 2019-2025 | ',
       mid2: '京ICP备20005387号-1',
       right: '北京圣福利达玻璃钢制品有限公司：bj-sfld.com'
     };

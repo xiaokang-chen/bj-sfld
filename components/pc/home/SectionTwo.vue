@@ -21,7 +21,7 @@
             >
               <img
                 class="image"
-                :src="`/product/${item}`"
+                :src="`${item}`"
               />
             </div>
           </div>
@@ -38,11 +38,57 @@ export default {
   data() {
     const initCategoryIdx = 0;
     const category = [
-        {name: '冷却塔', product: []},
-        {name: '水箱', product: []},
-        {name: '玻璃钢制品', product: []},
-        {name: '化粪池', product: []},
-        {name: '采光罩', product: []},
+        {
+          name: '冷却塔', 
+          product: [
+            '/product/lqt_1.jpg',
+            '/product/lqt_2.jpg',
+            '/product/lqt_3.jpg',
+            '/product/lqt_4.jpg',
+            '/product/lqt_5.jpg',
+            '/product/lqt_6.jpg',
+        ]},
+        {
+          name: '水箱',
+          product: [
+            '/product/shx_1.jpg',
+            '/product/shx_2.jpg',
+            '/product/shx_3.jpg',
+            '/product/shx_4.jpeg',
+            '/product/shx_5.jpg',
+            '/product/shx_6.jpeg',
+          ]
+        },
+        {
+          name: '玻璃钢制品', 
+          product: [
+            '/product/blg_1.jpg',
+            '/product/blg_2.jpg',
+            '/product/blg_3.jpeg',
+            '/product/blg_4.jpg',
+            '/product/blg_5.jpg',
+            '/product/blg_6.jpg',
+          ]
+        },
+        {
+          name: '化粪池', 
+          product: [
+            '/product/hfc_1.jpeg',
+            '/product/hfc_2.jpeg',
+            '/product/hfc_3.jpeg',
+            '/product/hfc_4.jpeg',
+            '/product/hfc_5.jpeg',
+            // '/product/hfc_6.jpeg',
+          ]
+        },
+        {
+          name: '采光罩', 
+          product: [
+            '/product/cgz_1.jpg',
+            '/product/cgz_2.jpeg',
+            '/product/cgz_3.jpg',
+          ]
+        },
     ];
     return {
       category,

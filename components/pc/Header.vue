@@ -1,18 +1,21 @@
 <template>
   <header class="header_container">
     <div class="header_content">
-      <a href="/">
+      <nuxt-link to="/">
         <img class="logo" src="/logo.png" />
-      </a>
+      </nuxt-link>
       <nav class="header_nav">
         <div v-for="(nav, index) in navs" :key="index" class="nav_item">
-          <a class="nav_title" :href="nav.href">{{nav.title}}</a>
-          <span v-if="nav.children" class="arrow" />
-          <div class="sub_nav">
-            <div v-for="subNav in nav.children" :key="subNav.id" class="sub_item">
-              {{subNav.title}}
+          <template v-if="nav.children">
+            <div class="nav_title">{{nav.title}}</div>
+            <span class="arrow" />
+            <div class="sub_nav">
+              <nuxt-link v-for="subNav in nav.children" :key="subNav.id" :to="subNav.route" class="sub_item">
+                {{subNav.title}}
+              </nuxt-link>
             </div>
-          </div>
+          </template>
+          <nuxt-link v-else class="nav_title" :to="nav.href">{{nav.title}}</nuxt-link>
         </div>
       </nav>
       <div class="header_contact">
@@ -21,9 +24,9 @@
           <span class="phone">1390-123-9056</span>
         </div>
         <div class="header_trial">
-          <a href="/">
+          <nuxt-link to="/">
             立即咨询
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -46,7 +49,7 @@ export default {
             ]
         },
         {
-          title: '解决方案', 
+          title: '行业客户', 
           children: [
             {id: 'canyin', title: '餐饮', route: '/solution/canyin'},
             {id: 'yiliao', title: '医疗', route: '/solution/yiliao'},
